@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="utf-8"><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake or Real</title>
+    <link rel="stylesheet" href="press-the-button-33-twinkl-buttons.css">
+    <link rel="stylesheet" href="press-the-button-34-game-ui.css">
+    <link rel="stylesheet" href="press-the-button-35-animate.min.css">
+    <link rel="stylesheet" href="press-the-button-36-hit-the-button-maths.css"> <!-- LINK TO MAIN CSS FILE -->
+    <link rel="stylesheet" href="press-the-button-37-press-the-button.css"> <!-- DONT OVERWRITE THIS FILE -->
+    <link rel="stylesheet" href="press-the-button-38-ukq1bwh.css"> <!--Report Font-->
+
+    
+
+    <script src="press-the-button-1-utils.js"></script>
+    <script src="press-the-button-2-jquery-1.12.4.js"></script>
+    <script src="press-the-button-3-jquery-ui.js"></script>
+    <script src="press-the-button-4-jquery.ui.touch-punch.min.js"></script>
+
+    <script src="press-the-button-5-howler.min.js"></script>
+    <script src="press-the-button-6-widow-fix.js"></script>
+    <script src="press-the-button-7-rangeslider.min.js"></script>
+
+
+    <script data-manifest src="press-the-button-25-manifest-inline-script.js"></script>
+    <script src="press-the-button-26-utils.js"></script>
+    <script src="press-the-button-27-create-dropdown.js"></script> <!--LINK TO MAIN JAVASCRIPT FILE-->
+    <script src="press-the-button-28-basic-template.js"></script> <!--LINK TO MAIN JAVASCRIPT FILE-->
+
+    <script src="press-the-button-29-inline-script.js"></script>
+</head>
+<body onload="init()">
+
+<!--PRELOADER-------------------------------------------------------------------------------->
+
+<div id="preload-div" class="loading" style="z-index: 1000">
+    <span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
+    <img src="press-the-button-30-twinkl_preloader.gif" style="vertical-align: middle; max-height: 100%;">
+</div>
+
+
+<!--DOCUMENT-------------------------------------------------------------------------------->
+
+<div id="htb-container" class="go-interactive">
+
+    <!--TITLE PAGE------------------------------------------------------------------------------>
+
+    <div id="titlePage" class="title-screen pages">
+        <h1 id="title" class="title-text inverted"></h1>
+        <div id="subContainer" class="theme-background-dark sub-heading"></div>
+        <div class="foreground-container"></div>
+
+        <div id="lets-go-button" class="text-button"> <div class="fit-me-button">Let's go!</div></div>
+        <img src="press-the-button-31-Twinkl-Logo-White.svg" class="title-logo main-twinkl-logo">
+        <img src="press-the-button-32-Beyond-Logo-White.svg" class="title-logo beyond-twinkl-logo" style="display:none">
+        <!--ADDD I LOGO-->
+    </div>
+
+    <!--INSTRUCTIONS PAGE----------------------------------------------------------------------->
+
+    <div id="instructionsPage" class="pages">
+
+        <div class="open-settings-panel pages">
+            <div class="settings-panel animated">
+                <span class="font-button close help-close times-symbol"><span class="path1"></span><span class="path2"></span></span>
+
+
+                <div class="column-game-settings">
+                    <div class="switch-container">
+                        <div id="auto-play-button">
+                            <div class="autoplay-switch-icon theme-text" style="height:75%; flex-direction: column">
+                                <svg id="Layer_2" style="display:none" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-off" class="svg-inline--fa fa-toggle-off fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path fill="currentColor" d="M384 64H192C85.961 64 0 149.961 0 256s85.961 192 192 192h192c106.039 0 192-85.961 192-192S490.039 64 384 64zM64 256c0-70.741 57.249-128 128-128 70.741 0 128 57.249 128 128 0 70.741-57.249 128-128 128-70.741 0-128-57.249-128-128zm320 128h-48.905c65.217-72.858 65.236-183.12 0-256H384c70.741 0 128 57.249 128 128 0 70.74-57.249 128-128 128z"></path></svg>
+                                <svg id="Layer_1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-on" class="svg-inline--fa fa-toggle-on fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path fill="currentColor" d="M384 64H192C86 64 0 150 0 256s86 192 192 192h192c106 0 192-86 192-192S490 64 384 64zm0 320c-70.8 0-128-57.3-128-128 0-70.8 57.3-128 128-128 70.8 0 128 57.3 128 128 0 70.8-57.3 128-128 128z"></path></svg>
+                            </div>
+                            <div class="autoplay-switch-text options-text-fit">Timer On</div>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown-container">
+                        <div id="min-sel" class="settings-drop-cont">
+                            <div class="min-set-text sub-text-settings options-text-fit">Minutes Per Round:</div>
+                            <select id="minutes-select" class="dropdown options-text-fit" placeholder="Select Time Limit">
+                                <option class="timed" data-num="1">1</option>
+                                <option class="timed" data-num="2">2</option>
+                                <option class="timed" data-num="3">3</option>
+                                <option class="timed" data-num="4">4</option>
+                                <option class="timed" data-num="5">5</option>
+                                <option class="timed" data-num="8">8</option>
+                                <option class="timed" data-num="10">10</option>
+                            </select>
+                        </div>
+                        <div id="q-sel" class="settings-drop-cont inactive-button">
+                            <div class="q-set-text sub-text-settings options-text-fit">Questions Per Round:</div>
+                            <select id="question-select" class="dropdown options-text-fit" placeholder="Select Guess Amount">
+                                <option class="timed" data-num="10">10</option>
+                                <option class="timed" data-num="25">25</option>
+                                <option class="timed" data-num="50">50</option>
+                                <option class="timed" data-num="100">100</option>
+                                <option class="timed unlim-text" data-num="unlimited">Unlimited</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--
+                <div class="slider-contain multi-con">
+                    <div id="score-bar-title"class="multi-on-text options-text-fit"> Score Multiplier Bar: </div>
+                    <div id="multi-button">
+                        <div class="autoplay-switch-icon multi-bar-on theme-text">
+                            <svg id="auto-switch-off" style="display:none" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-off" class="svg-inline--fa fa-toggle-off fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M384 64H192C85.961 64 0 149.961 0 256s85.961 192 192 192h192c106.039 0 192-85.961 192-192S490.039 64 384 64zM64 256c0-70.741 57.249-128 128-128 70.741 0 128 57.249 128 128 0 70.741-57.249 128-128 128-70.741 0-128-57.249-128-128zm320 128h-48.905c65.217-72.858 65.236-183.12 0-256H384c70.741 0 128 57.249 128 128 0 70.74-57.249 128-128 128z"></path></svg>
+                            <svg id="auto-switch-on"  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="toggle-on" class="svg-inline--fa fa-toggle-on fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M384 64H192C86 64 0 150 0 256s86 192 192 192h192c106 0 192-86 192-192S490 64 384 64zm0 320c-70.8 0-128-57.3-128-128 0-70.8 57.3-128 128-128 70.8 0 128 57.3 128 128 0 70.8-57.3 128-128 128z"></path></svg>
+                        </div>
+                        <div id="score-multi-text-on" class="options-text-fit">On</div>
+                    </div>
+                </div>
+-->
+
+                <!--SOUND OPTIONS-------------------------------------------------->
+
+                <div class="slider-contain">
+                    <div class="m-multi-on-text multi-on-text options-text-fit">Music Volume:</div>
+                    <div class="slidecontainer" style="display: inline-block">
+                        <input id="music-slider" class="slider" value="5" min="0" max="10" name="rangeslider" type="range">
+
+                    </div>
+                </div>
+
+                <div class="slider-contain">
+                    <div class="e-multi-on-text multi-on-text options-text-fit">Effects Volume:</div>
+                    <div class="slidecontainer" style="display: inline-block">
+                        <input id="effects-slider" class="slider" value="10" min="0" max="10" name="rangeslider" type="range">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="settings-button-cont">
+            <div class="time-limit-text">Settings
+            </div>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" class="cog-icon theme-text" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"></path></svg>
+
+        </div>
+        <div id="instructionsPanel" class="jodal">
+            <div class="jodal-back"></div>
+            <h1 class="jodal-title intro-title">How to Play:</h1>
+            <p class="jodal-text allInstructions">Examine the news story and work out whether it's real or fake news. See how many you can get correct!</p>
+            <div id="playButton" class="main-theme-color border-radius text-button play">Play</div>
+        </div>
+    </div>
+
+    <!--NAVIGATION-------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="go-navigation-bar">
+        <div class="go-nav-panel">
+            <div class="circle-buttons-container">
+                <span class="font-button close help-close ebook-close-button inverted" id="close-button"><span class="path1"></span><span class="path2"></span></span>
+            </div>
+            <div class="square-buttons-container">
+                <span class="sound-toggle font-button sound-off" id="mute-button"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                <span class="fullscreen font-button expand-screen" id="fullscreen-button"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+            </div>
+        </div>
+    </div>
+        <!--MENU-->
+
+    <div id="menuPage" class="pages">
+
+
+
+        <div class="menu-panel panel">
+            <div class="menu-outer">
+                <div class="menu-title-container add-shadow-overlay">
+
+
+                </div>
+
+
+                <div class="option-menu-hold ">
+                    <div id="option-men" class="option-menu-contain theme-background-light">
+                    </div>
+                    <div class="do-scroll-overlay theme-border-dark">
+                        <div class="chev-contain">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="theme-text arrow down" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="back-button-menu">
+                        <span class="font-button prev" id="ebook-prev-BTN" style="font-size: 45px"><span class="path1"></span><span class="path2"></span></span>
+                    </div>
+
+                    <div class="right-column-type type-option-portrait">
+
+                        <div class="box-inside htb-box">
+                            <div class="game-type-image">
+                                <div class="icon-holder">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="theme-text option-button svg-inline--fa fa-play-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="game-type-text"><div class="style-title">Press The Answer</div></div>
+                        </div>
+
+                        <div class="box-inside htq-box">
+                            <div class="game-type-image">
+                                <div class="icon-holder">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="theme-text option-button svg-inline--fa fa-play-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="game-type-text"><div class="style-title">Press The Question</div></div>
+
+                        </div>
+                        <div class="box-inside htm-box">
+                            <div class="game-type-image">
+
+                                <div class="icon-holder">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" class="theme-text option-button svg-inline--fa fa-play-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="game-type-text"><div class="style-title">Press The Missing Number</div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--MAIN PAGE----------------------------------------------------------------------------------------------------------------------------->
+
+    <div id="mainPage" class="pages">
+
+
+
+        <div class="question-container">
+
+            <!--
+                        <span class="font-button prev" id="ebook-prev-BTN" style="font-size: 45px";><span class="path1"></span><span class="path2"></span></span>
+            -->
+            <div class="text-button back-button">
+                <div class="back-button-icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-left" class=" svg-inline--fa fa-arrow-alt-circle-left fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z"></path></svg>
+                </div>
+                <div class="back-to-menu-text">
+                    Menu
+                </div>
+
+            </div>
+
+            <div class="question-text-outer">
+                <div class="question-image-cont"></div>
+                <div class="question-text">null</div>
+            </div>
+
+            <div class="filler-invisible"></div>
+        </div>
+
+        <div id="getWood" class="panel main-page-panel theme-border">
+
+
+
+
+            <div class="full-column">
+
+                <!--
+                <div class="score-multiplier-text">
+                    <div class="rotate-text">Score Multiplier</div>
+                </div>
+-->
+                <div class="bonus-mult-cont top-cont">
+                    <div class="circle">
+                        <div id="bonus-multi-text">×1</div>
+                    </div>
+                </div>
+
+                <div class="score-bar-outer">
+                    <div class="score-bar-cont">
+                        <div class="htb-loading animated fadeIn" id="animated-loading-bar">
+                            <div class="bg"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bonus-mult-cont light-cont">
+                    <div class="light-circle green-light "></div>
+                </div>
+
+                <div class="bonus-mult-cont light-cont" style="display:none">
+                    <div class="light-circle green-light "></div>
+                </div>
+
+
+            </div>
+
+            <div class="htb-button-outer">
+
+                <div class="title-text bonus-big "> ×1 Multiplier</div>
+
+                <div class="htb-button-container">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="timer-and-score-panel">
+            <div class="score-full">
+                <div class="timer-text text-score theme-text">Score: </div>
+                <div class="score-outer"><div class="inside-score correct-number">0 </div></div>
+            </div>
+
+            <div class="timer-full">
+                <div class="timer-text text-timer theme-text">Timer: </div>
+                <div class="timer">
+                    <div class="timer-inside-text">00:00</div>
+                </div>
+            </div>
+
+            <div class="score score-filler"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- END PAGE ---------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!--INSERT ADDITIONAL PAGES HERE-->
+
+
+
+    <div id="endGameScreen" class="pages">
+
+        <div id="well-done" class="jodal">
+            <div class="jodal-back"></div>
+            <h1 id="isItCorrect" class="jodal-title">Well done!</h1>
+            <div class="well-done-row">
+                <div class="column-float">
+                    <div id="answerWasText" class="jodal-text jodal-sub-text">Total Score:</div>
+                    <div class="theme-text total-score-feedback">Total Score</div>
+                </div>
+
+                <!--
+                <div class="column-float out-of-column">
+                    <div id ="howManyFirstTime" class="jodal-text jodal-sub-text">
+                        <div class="you-got-text">Your total score was</div>
+                    </div>
+                </div>
+
+                -->
+            </div>
+
+            <div id="button-contain" style="z-index: 100">
+                <div id="play-again" class="border-radius text-button play"> Play Again </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://use.typekit.net/gnd4ukl.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Myeongjo:wght@400;700;800&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/js/vendor/jquery.ui.touch-punch.min.js"></script>
@@ -33,45 +43,447 @@
     <script src="scripts/interact.js"></script>
 
     <link rel="stylesheet" href="/css/web.css">
+    <link rel="stylesheet" href="/css/web2.css">
 
 </head>
-<body style="font-family:'Sofia Sans', sans-serif">
+<body class="" style="font-family:'Sofia Sans', sans-serif">
 
+
+
+<div class="password-protect-screen container-fluid" style="backdrop-filter: blur(10px);">
+    <div class="info-cont row justify-center">
+
+        <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 col-xl-6 box-drop-alt" style="padding: 5%">
+
+            <h2>Enter Password</h2>
+            <br>
+            <p class="mid-text"> This website contains client information, please use the password provided to view the full range of work. If you haven't been provided with a password and you would like to see what I do, feel free to email me at <b>traxoncreative@gmail.com </b></p>
+
+
+            <div class="password-box">
+
+                <!--<label class="mid-text" for="pass">Password:</label>-->
+                <input type="password" id="pass" name="password" minlength="8" required>
+                <input  class="pw-button" id ="enterCode" type="submit" value="submit">
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="menu-cont">
+
+    <h2 class="menu-button"><a href="#workTrigger">work</a></h2>
+    <h2 class="menu-button"><a href="#c2">about</a></h2>
+    <h2 class="menu-button"><a href="#C4">contact</a></h2>
+</div>
+
+<!--
 <div class="container background-cont">
     <div class="card">
         <div class="blob"></div>
     </div>
 </div>
-
-<div class="web-header row container-fluid">
-
+-->
 
 
-    <div class="web-menu flex-row-reverse">
-        <div class="p-2" >Home</div>
-        <div class="p-2" >Work</div>
-        <div class="p-2" >About</div>
-        <div class="p-2" >Contact</div>
+<div class="container-fluid web-menu">
+    <div class="row" style="width:100%">
+
+
+        <div class="brand-me col-xs-4 col-sm-4 col-md-6 col-lg-6 col-xl-6" style="height:100%">
+            <img class="logo-top" src="images/logo.png">
+
+            <div class="name-corner hidden-xs hidden-sm">Robert Traxon &nbsp;  <b style="color:#645CBB"> | Product Designer</b></div>
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-6 col-lg-6 col-xl-6 menu-right">
+            <div id="nav-menu">
+                <div class="justify-center"><a href="#workTrigger">work</a></div>
+                <div class="justify-center"><a href="#c2">about</a></div>
+                <div class="justify-center"><a href="#C4">contact</a></div>
+            </div>
+        </div>
+
+        <div class="col-xs-8 col-sm-8 hidden-md hidden-lg hidden-xl menu-but-hol">
+            <div id="nav-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
     </div>
 
+</div>
 
-    <div class="text-left col-md-6">
-        <h3 class="intro-text animate__animated animate__fadeInUp">Hi, I'm Rob. Im an experienced graphic designer specialising in <b>digital design</b>, digital system management and the production of web based educational resources.</h3>
+
+<div class="web-header container-fluid dotted-grey">
+
+
+
+    <!--<div class="big-circle"></div>-->
+
+
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="height:90%">
+
+
+
+        <div class="text-left">
+
+            <!--
+            <div class="skils-cont">
+                <div class="tab-style tag">UX Design</div>
+                <div class="tab-style tag">Digital Design</div>
+                <div class="tab-style tag">Branding</div>
+            </div>
+            -->
+
+            
+            <h2 class="intro-text animate__animated animate__fadeInUp">Hi, I'm Rob. Im an experienced graphic & <b class="purple-tag">product designer</b> based in Sheffield.</h2>
+
+            <a href="#c2" ><button class="main-button button-width download-button">Find out More</button></a>
+
+            <!--<img  id="hm1" class="animate__animated animate__fadeInLeft home-img fit-image img-hol-box hidden-xs hidden-sm" src="images/main/image-1.png">-->
+
+        </div>
+
 
     </div>
-    <div class="text-left col-md-6">
+    <div class="hidden-xs hidden-sm col-md-6 col-lg-6 col-xl-6 justify-center" style="height:90%">
+
+
+
+      <img style="padding:10%" class="fit-image" src="images/rat.png">
+
 
     </div>
-
+    <!--
+    <div class="circle-cont"><div id='circle' data-text="SEE MORE SEE MORE&nbsp;"></div></div>
+-->
 
 
 </div>
 
-<div class="container-fluid row my-work">
+
+<div id="workTrigger" class="container-fluid my-work line-bottom">
+
+    <!--
+    <h2> My work</h2>
+    <p>Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
+
+    -->
+
+
+
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 doublecont purple-back">
+            <span class="small-purp" style="margin-right: 20%"><b><i>How I Work</i></b></span>
+
+            <!--<img src="images/graphic.png">-->
+
+            <div class="hidden-md hidden-lg hidden-xl" style="display: flex;padding-bottom: 0!important;">
+                <p class="" style="font-size: x-large ; font-weight: 200;">
+                    No two products are the same, but to ensure each outcome suits the needs of the user and the business, I typically follow a set process. Click on each area for a little more info on how I like to work!
+
+                </p>
+
+            </div>
+
+
+            <div class="hidden-xs hidden-sm" style="display: flex">
+                <p class="how-info subText" style="font-size: xx-large ; font-weight: 200;">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel massa ultrices, tempor nunc id, posuere sem. Ut commodo ligula efficitur imperdiet lacinia. Vestibulum ut lobortis massa. Nunc id pretium augue. Donec congue arcu mauris, at consectetur ex placerat id. Suspendisse sit amet facilisis orci. Quisque sed magna ut massa volutpat placerat. Suspendisse ac tortor tortor. Sed nulla odio, mollis vitae magna at, porttitor pharetra odio. Phasellus varius lectus mauris, vel imperdiet libero finibus at.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl doublecont">
+
+
+
+
+
+                 <div class="collapsible area-select">Problem +</div>
+
+                 <div class="content">
+                     <p>
+                         Whether it’s a suggestion from a user or speculative analysis within the business, each project starts with a problem or gap in the market.
+                     </p>
+                 </div>
+                 <div class="collapsible area-select">Research +</div>
+                 <div class="content">
+                     <p>
+                         Each idea is then investigated using a combination of appropriate qualitative or quantitative research. This is to ensure each idea is supported by the best data available and to help me pinpoint key areas for improvement.                     </p>
+                 </div>
+                 <div class="collapsible area-select">User Needs +</div>
+                 <div class="content">
+                     <p>
+                         The next step is being able to prioritise what the user needs from the project and being able to distinguish it from what the user wants.
+                     </p>
+                 </div>
+                 <div class="collapsible area-select">Business Needs +</div>
+                 <div class="content">
+                     <p>
+                         It is also important to understand the goals, desires and limitations of the business itself and grade any ideas to assess the impact and effort of the project.
+                     </p>
+                 </div>
+
+                  <div class="collapsible area-select">Solution +</div>
+
+                  <div class="content">
+                      <p>
+                          With all the research and data in place, it's now time to form a proper solution to the problem. Whether it's personas, user-flow or an information architecture diagram, It’s important to create a clear response, highlighting the proposed issues and how I plan to address them.
+                      </p>
+                  </div>
+                  <div class="collapsible area-select">Prototype +</div>
+                  <div class="content">
+                      <p>
+                          Now for the fun part! Creating low and high fidelity wireframes and using a range of prototyping tools to bring the solution to life.
+                      </p>
+                  </div>
+                  <div class="collapsible area-select">Development +</div>
+                  <div class="content">
+                      <p>
+                          Once the prototypes have been thoroughly tested and approved its now time to move forward to the development stage. Whether this is passed onto another team or developed myself, it's important to ensure the same standard of quality is maintained from concept through to completion.
+                      </p>
+                  </div>
+
+        </div>
+
+
+        <div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4 doublecont">
+            <div class="what-i-do">
+
+
+
+
+
+
+                <ul style="font-size: xx-large ; font-weight: 200;">
+                    <p data-id ="problem" class="area-select line-bottom">Problem +</p>
+                    <p data-id ="research" class="area-select line-bottom">Research +</p>
+                    <p data-id ="user_needs" class="area-select line-bottom">User Needs +</p>
+                    <p data-id ="business" class="area-select line-bottom">Business Needs +</p>
+                    <p data-id ="solution" class="area-select line-bottom">Solution +</p>
+                    <p data-id ="prototype" class="area-select line-bottom">Prototype +</p>
+                    <p data-id ="development" class="area-select line-bottom">Development +</p>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="workTrigger" class="container-fluid no-pad" style="width:100%">
+
+    <!--
+    <h2> My work</h2>
+    <p>Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
+
+    -->
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 doublecont green-cont justify-center" style="background-color: #1FA95B">
+            <span class="small-purp" style="margin-right: 20%"><b><i>Case Studies</i></b></span>
+            <div class="subText" style="display: flex">
+                <p style="font-size: x-large ; font-weight: 200;"><b>Here are a few of the products I have worked on.</b><br><br><i>For a more in-depth breakdown of each project, feel free to contact me to discuss it in more detail.</i> </p>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 0">
+                <button onclick="location.href='#C4'" type="button" class="button-width center-but view-all-button">Contact</button>
+            </div>
+        </div>
+
+
+        <div data-id="1" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/press-the-button/main.png')"></div>
+        </div>
+        <div data-id="9" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url(' images/twinkl/main.png')"></div>
+        </div>
+
+        <div data-id="4" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/northbank/image-1.png')"></div>
+
+        </div>
+        <div data-id="7" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/monster-island/main.png')"></div>
+        </div>
+
+        <div data-id="0" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/fitness/image-1.png')"></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!--
+<div id="" class="container-fluid justify-center line-bottom case-button" style="width:100%">
+
+    <div class="row">
+         <div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4">
+
+         </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+             <button class="button-width center-but view-all-button">View more</button>
+         </div>
+
+         <div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4">
+
+         </div>
+
+    </div>
+</div>
+-->
+
+
+
+
+
+
+
+<div id="" class="container-fluid no-pad" style="width:100%">
+
+    <!--
+    <h2> My work</h2>
+    <p>Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
+
+    -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 doublecont green-cont" style="background-color: #f54C2b;text-align: center!important;">
+            <span class="small-purp"><b><i>Other Work</i></b></span>
+
+            <div class="subText" style="display: flex;width:100%">
+                <p style="font-size: x-large; width: 100% ; font-weight: 200;">Here are a few examples of non-product design related projects I have worked on over the years.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row line-bottom" style="justify-content: flex-start">
+
+
+        <div data-id="6" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+
+
+            <div class="image-box-inner" style="background-image: url('images/d&ad/main.png')"></div>
+        </div>
+
+        <div data-id="2" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+
+            <div class="image-box-inner" style="background-image: url('images/133/watch-logo.png')"></div>
+        </div>
+
+        <div data-id="3" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/d&va/main.png')"></div>
+        </div>
+        <div data-id="5" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/aura/main.png')"></div>
+        </div>
+        <div data-id="8" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 image-box project-button">
+            <div class="image-box-inner" style="background-image: url('images/bts/main.png')"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<div id="workTrigger" class="container-fluid my-work line-bottom">
+
 
     <h2> My work</h2>
     <p>Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
-    <div class="tag-cont-filter">
+
+
+    <div class="row">
+        <h2 class="col-md-6 col-lg-6 col-xl-6 bolder-text line-right doublecont"> My work</h2>
+        <p class="col-md-6 col-lg-6 col-xl-6 doublecont">Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
+    </div>
+
+
+</div>
+
+
+
+
+<div id="workTrigger" class="container-fluid my-work line-bottom">
+
+
+    <h2> My work</h2>
+    <p>Here is a selection of my work. For any project that is password protected, please contact me for the key.</p>
+
+
+
+
+    <div class="tag-cont-filter line-bottom">
         <div class="tag">Product Design</div>
         <div class="tag">UX/UI</div>
         <div class="tag">Branding</div>
@@ -81,104 +493,343 @@
 
     </div>
 
-    <div class="row all-work">
+    <div class="all-work row">
 
 
     </div>
 </div>
 
 
-<div class="work-cont-overlay container-fluid row">
-    <div class="row animate__animated animate__slideInUp  modal-item col-11 col-xs-11 col-sm-10 col-md-10 col-lg-8 col-xl-6">
+-->
+
+<div class="work-cont-overlay container-fluid">
+
+
+    <div class="animate__animated animate__slideInUp modal-item col-xs-10 col-sm-10 col-md-8 col-lg-6">
         <div class="content-show">
+            <div class="back-to-top">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg class="circle-pad" height="auto" width="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 407.437 407.437" xml:space="preserve">
+                    <polygon points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "/>
+                </svg>
 
+            </div>
+
+
+
+            <div class="header-top line-bottom row container-fluid">
+
+
+                <!--
+
+                <div class="button-hol col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 line-right">
+                    <div class="change-proj prev">
+                        <svg viewBox="0 0 15 9" class="chevronUpRounded" style="width: 14px; height: 14px; display: block; fill: rgba(55, 53, 47, 0.45); flex-shrink: 0; backface-visibility: hidden;"><path d="M1.258 6.5L7.203.422a.946.946 0 01.719-.32.99.99 0 01.726.32L14.586 6.5a.89.89 0 01.266.648c0 .524-.407.93-.922.93a.921.921 0 01-.672-.281L7.93 2.32 2.586 7.797a.926.926 0 01-.672.281.915.915 0 01-.922-.93c0-.25.094-.476.266-.648z"></path></svg>
+                    </div>
+                    <div class="change-proj next">
+                        <svg viewBox="0 0 15 9" class="chevronDownRounded" style="width: 14px; height: 14px; display: block; fill: rgba(55, 53, 47, 0.45); flex-shrink: 0; backface-visibility: hidden;"><path d="M7.92188 8.65625C8.19531 8.64844 8.44531 8.54688 8.64844 8.32812L14.5859 2.25C14.7578 2.07812 14.8516 1.85938 14.8516 1.60156C14.8516 1.08594 14.4453 0.671875 13.9297 0.671875C13.6797 0.671875 13.4375 0.773438 13.2578 0.953125L7.92969 6.42969L2.58594 0.953125C2.40625 0.78125 2.17188 0.671875 1.91406 0.671875C1.39844 0.671875 0.992188 1.08594 0.992188 1.60156C0.992188 1.85938 1.08594 2.07812 1.25781 2.25L7.20312 8.32812C7.41406 8.54688 7.64844 8.65625 7.92188 8.65625Z"></path></svg>
+                    </div>
+                </div>
+-->
+
+
+                <div class="dotted-light col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 project-box line-right mid-me top-pad" style="text-align: left; padding:4%!important;">
+                    <b> <p class="small-purp" id="pjt">Project Title</p></b>
+                    <p class="sub-grey" id="pjs"> Games</p>
+
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mid-me" style="padding: 4%!important;">
+                    <p  id="pjd"> A small bit of a project description of things I used to make this project </p>
+
+
+                    <div class="inner-info row" style="text-align: left">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mid-me" style="text-align: left;justify-content: start">
+                            <b> Client</b>
+                            <p class="client-list">Twinkl</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 mid-me" style="text-align: left">
+                            <b> My Role</b>
+                            <p class="role-list">Twinkl</p>
+                        </div>
+                    </div>
+
+
+                    <!--
+                    <div class="inner-info row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mid-me" style="text-align: left">
+                            <b> Tools Used</b>
+                            <p>Figma Miro Jira Tableua</p>
+
+                        </div>
+
+                    </div>
+
+                    -->
+
+                </div>
+
+
+
+
+            </div>
             <!--NAV AND BREADCRUMBS-->
-            <h2 id="pjt"> Project Title </h2>
-            <p id="pjd"> A small bit of a project description of things I used to make this project </p>
 
-           <div class="tag-cont"></div>
+          <!-- <div class="tag-cont line-bottom" style="display: hidden"></div>-->
 
-            <div class="container-fluid row content-all"></div>
+            <div class="container-fluid content-all"></div>
 
         </div>
+
     </div>
+    <svg id="closeScreenIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+
 </div>
 
 
-<div class="contact-cont container-fluid row">
-    <h2>About</h2>
-    <p></p>
 
 
 
-    <div class="email-form">
 
-        <?php
-            if(isset($_POST["submit"])) {
-            $recipient = "traxoncreative@gmail.com"; //my email
-            echo $subject = 'Email message from Point Plumbing';
-            echo $name = $_POST ["yourName"];
-            echo $email = $_POST["yourEmail"];
-            echo $phone = $_POST["yourPhone"];
-            echo $location = $_POST["yourLocate"];
-            echo  $message = $_POST["yourMessage"];
 
-             $mailBody="Name: $name\nEmail: $email\n\n$message";
+<div class="contact-cont">
 
-             mail($recipient, $subject, $mailBody, "From: $name <$email>");
+    <div id="c2" class="about-me-section container-fluid">
 
-                echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 
-        }
-        ?>
+        <div class="row line-bottom">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 doublecont justify-center">
+                <span class="small-purp alt-purp"><b><i style="color: #645CBB">About Me</i></b></span>
+                <h2 class="intro-text intro-alt intro-alt-smaller animate__animated animate__fadeInUp">
 
-        <form action="" method="post" id="spaceing" data-abide>
-            <div class="form-bg">
-                <div class="row">
-                    <div id="name" class="large-6 medium-6 small-12 columns">
-                        <label> <h5>Name</h5>
-                            <input type="text" name="yourName" placeholder="What is you're name?"></input>
-                        </label>
-                    </div>
+                    Hi, Im Robert Traxon, an experienced designer specialising in digital, UX and product design.
+                    With over 5 years of developing my understanding of UX, UI and web design
+                    principles, I have developed a user-centric approach, focusing on
+                    accessibility and ease of use within my work.
 
-                    <div id="email" class="large-6 medium-6 small-12 columns">
-                        <label><h5>Email</h5>
-                            <input type="email" name="yourEmail" placeholder="Please enter in you're email."required></input>
-                        </label>
-                        <small class="error">An email Address is required.</small>
-                    </div>
-                </div>
+                </h2>
 
-                <div class="row">
-                    <div id="phone"class="large-6 medium-6 small-12 columns">
-                        <label><h5>Phone</h5>
-                            <input type="text" name="yourPhone" placeholder="Please enter you're phone number."></input>
-                        </label>
-                    </div>
-
-                    <div id="location" class="large-6 medium-6 small-12 columns">
-                        <label><h5>Location</h5>
-                            <input type="text" name="yourLocate" placeholder="Where on Oahu are you currently living?"></input>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div id="message-area" class="large-12 medium-12 small-12 columns">
-                        <label><h5>Message</h5>
-                            <textarea id="message" name="yourMessage" placeholder="Please tell us about you're plumbing issues."></textarea>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div id="submit" class="large-3 medium-3 small-3 columns">
-                        <button name="submit" type="submit">Submit</button>
-                    </div>
-                </div>
             </div>
-        </form>
+
+        </div>
+
+
     </div>
+
+
+
+
+
+    <div class="container-fluid fluid-pad line-bottom brutalist-yellow">
+
+
+        <div class="row justify-center" style="width:100%">
+
+            <div class="cont-2 col-xs-10 col-sm-4 col-md-4 col-lg-3 col-xl-3 justify-center">
+                <div class="info-circle">
+                    <!--<b class="bigger">11+</b>-->
+                    <img src="images/icon-1.png">
+                    <br>
+                    Years of design experience
+                </div>
+
+            </div>
+            <div class="cont-2 col-xs-10 col-sm-4 col-md-4 col-lg-3 col-xl-3 justify-center">
+                <div class="info-circle">
+
+                   <!-- <b class="bigger">6+</b>-->
+
+                    <img src="images/icon-2.png">
+                    <br>
+                    Years of commercial design experience
+                </div>
+
+
+            </div>
+            <div class="add-line cont-2 col-xs-10 col-sm-4 col-md-4 col-lg-3 col-xl-3 justify-center">
+
+                <div class="info-circle">
+
+                    <!--<b class="bigger">5+</b>-->
+                    <img src="images/icon-3.png">
+
+                    <br>Years specialising in digital product design
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+
+    <div class="row" style="padding: 5%;">
+
+            <div class="image-background text-left col-xs-12 col-sm-12 col-md-7 col-lg-4 col-xl-4" style="padding: 0 5%">
+                <span class="small-purp" style="margin-right: 20%"><b><i>What I do</i></b></span>
+                <p class="hidden-md hidden-lg hidden-xl" style="font-size: x-large ; font-weight: 200;">It's not only UX and product design that I do. These are the main areas in which I have developed my skills over the years.</p>
+
+                <p class="sub-info hidden-xs hidden-sm" style="font-size: x-large ; font-weight: 200;">It's not only UX and product design that I do. These are the main areas in which I have developed my skills over the years.</p>
+
+                <!--<img id=""  class="animate__animated animate__fadeInRight home-img fit-image img-hol-box" src="images/main/image-1.png">-->
+            </div>
+
+
+
+
+
+            <div class="cont-1 hidden-xs hidden-sm col-md-5 col-lg-4 col-xl-4">
+
+
+                <div class="what-i-do" style="margin-left: 10%;">
+                    <ul style="font-size: xx-large ; font-weight: 200;">
+                        <p data-id="product" class="sub-select line-bottom">Product/UX Design +</p>
+                        <p data-id="ui" class="sub-select line-bottom">UI Design +</p>
+                        <p data-id="digital" class="sub-select line-bottom">Digital Design +</p>
+                        <p data-id="branding" class="sub-select line-bottom">Branding +</p>
+                        <p data-id="print" class="sub-select line-bottom">Print Design +</p>
+                        <p data-id="game" class="sub-select line-bottom">Game Design +</p>
+
+                    </ul>
+                </div>
+
+
+                <!--
+
+                <div class="border-bottom">
+                    <p style="font-size: xx-large ; font-weight: 200;">To find out a little bit more about what I do, feel free to check out my CV below.</p>
+                    <a href="cv.pdf" download="cv"><button class="button-width">Download CV</button></a>
+                </div>
+
+-->
+
+            </div>
+
+
+
+        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl doublecont">
+
+            <div class="collapsible area-select">Product/UX Design +</div>
+            <div class="content">
+                <p>
+                    My primary focus for the last 5+ years has been designing and improving resources within ed-tech. This has been a fully-involved process from concept to completion, using research and data to drive forward new features, fixes, and innovative products.                 </p>
+            </div>
+            <div class="collapsible area-select">UI Design +</div>
+            <div class="content">
+                <p>
+
+                    As well as working on well-rounded user experiences, I have extensive experience in developing and designing accessible user interfaces across a variety of platforms.
+                </p>
+            </div>
+            <div class="collapsible area-select">Digital Design +</div>
+            <div class="content">
+                <p>
+                    With years of designing and developing responsive web applications, I have adapted a user-centric approach within my digital design projects.
+                </p>
+            </div>
+
+            <div class="collapsible area-select">Branding +</div>
+
+            <div class="content">
+
+                <p>
+                    Despite focusing on digital projects for the last few years, I have kept true to my graphic design roots and still enjoy creating memorable brands using the skills I have acquired throughout my career.
+
+                </p>
+            </div>
+
+            <div class="collapsible area-select">Print Design +</div>
+
+            <div class="content">
+
+                <p>
+                    With in-house experience working with both packaging and print-based publishing, I thoroughly enjoy bringing designs to life through colour, typography, and layout design.
+                </p>
+            </div>
+
+            <div class="collapsible area-select">Game Design +</div>
+
+            <div class="content">
+
+                <p>
+                    Education through gamification has been a pivotal part of my UX experience. This combination of programming, design, and critical thinking has helped me develop and learn key skills to help me provide meaningful products.                </p>
+            </div>
+
+        </div>
+
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 double-cont">
+
+                <div class="border-bottom">
+                    <p style="font-size: xx-large ; font-weight: 200;">To find out a little bit more about what I do, feel free to check out my CV below.</p>
+                    <a href="cv.pdf" download="cv"><button class="center-but button-width download-button">Download CV</button></a>
+                </div>
+
+            </div>
+
+
+    </div>
+
+
+
+        </div>
+
+
+
+
+    <div class="social-links row" style="background-color: #e1e1e1">
+
+
+        <div id="C4" class="contacts col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            <p class=""><b>Contact</b></p>
+
+
+            <div class="buttonSpace">
+
+                <!--<span class="material-symbols-outlined">call</span>-->
+
+                <div class="info-line"> <b>Phone</b> : 07307607685</div>
+            </div>
+
+            <div class="buttonSpace">
+
+            <!--<span class="material-symbols-outlined">mail</span>-->
+            <div class="info-line"> <b>Email</b> : traxoncreative@gmail.com</div>
+            </div>
+        </div>
+
+        <div class="socials col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <p class=""><b>Connect</b></p>
+            <a class="linkedInDocs buttonSpace">
+                <!--
+                <div><svg class="linkedIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></div>
+                -->
+                <div><a style="color:white" href="https://www.linkedin.com/in/robert-traxon-826a7924a/" target="_blank"> LinkedIn</a></div>
+            </div>
+            <p  class=""></p>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--<div class="row">Website designed and developed by Robert Traxon </div>-->
+
+
 
 </div>
 
