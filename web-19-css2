@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy80WvpPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy88WupPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy8xuupPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy80WupPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy83eupPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy85uppPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy86KppPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy88WppPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6G-LCVXSLy9uPBwlATrORgnBjYmSP97MWy8-yppPY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69B6sa3t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69D6sK3t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69AksK3t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69B6sK3t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69BIsK3t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69Ckt63t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69Cdt63t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69D6t63t.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sofia Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69DTt63t.ttf) format('truetype');
+}
