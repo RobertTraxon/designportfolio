@@ -372,6 +372,7 @@ window.onload = function() {
         if($("#pass").val() === constPPProtect){
 
             rr();
+            $("#pass").val("")
 
 
             //START TEXT ANIM THEN
@@ -383,12 +384,25 @@ window.onload = function() {
         console.log( constPPProtect,$("#pass").val())
     })
 
+
+
+
+
+    $("input").on('keyup', function (e) {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+            if($("#pass").val() === constPPProtect){
+                rr();
+                //START TEXT ANIM THEN
+            }
+        }
+    });
+
     localStorage.clear();
     sessionStorage.clear();
 
 
     if(cat==="Tom"){
-       // rr();
+        //rr();
     }
 
 
@@ -622,7 +636,6 @@ window.onload = function() {
         })
 
         item.content.forEach(function(e){
-            console.log("RATTSTST")
             var image = "<img src='"+e.image+"' class='image-cont'>"
            // $(".content-all").append(image)
 

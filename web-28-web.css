@@ -371,8 +371,10 @@ hr {
   margin-left: 5vw; }
 
 @media (max-width: 575px) {
+  .what-do {
+    padding: 0 5% !important; }
   .logo-top {
-    padding: 2vw !important; }
+    padding: 5% !important; }
   #pjt, #pjs {
     text-align: center; }
   #pjt {
@@ -400,7 +402,10 @@ hr {
     font-size: 4vw !important; }
   .intro-alt-smaller {
     font-size: 4vw !important;
-    text-align: left !important; }
+    text-align: left !important;
+    padding: 5%; }
+  .socials {
+    margin-top: 5% !important; }
   .project-box {
     border-right: unset !important;
     border-bottom: 1px solid black; }
@@ -428,6 +433,17 @@ hr {
     padding-bottom: calc(100%/1); } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .socials {
+    margin-top: 5% !important; } }
+
+body {
+  overflow-x: hidden !important; }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .what-do {
+    padding: 0 5% !important; }
+  .socials {
+    margin-top: 5% !important; }
   .logo-top {
     padding: 2vw !important; }
   #pjt {
@@ -446,7 +462,8 @@ hr {
     font-size: 5vw !important; }
   .intro-alt-smaller {
     font-size: 4vw !important;
-    text-align: left !important; }
+    text-align: left !important;
+    padding: 5%; }
   .add-line {
     border-top: 1px solid black !important; }
   .subText p {
@@ -470,6 +487,10 @@ hr {
     padding-bottom: calc(100%/1); } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .what-do {
+    padding: 0 5% !important; }
+  .intro-text {
+    font-size: 6vw !important; }
   .name-corner {
     font-size: x-large !important; }
   .subText p {

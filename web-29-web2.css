@@ -208,7 +208,8 @@
   margin-bottom: 5%; }
 
 #pjt {
-  padding: 0; }
+  padding: 0;
+  font-weight: 700; }
 
 #pjd {
   text-align: start; }
@@ -345,10 +346,11 @@ button {
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
-  .image-box-inner:hover {
-    -webkit-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-            transform: scale(1.03); }
+
+.project-button .image-box-inner:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03); }
 
 .mid-text {
   font-weight: 300;
@@ -385,7 +387,11 @@ button {
 
 .main-button {
   padding: 2%;
-  font-size: x-large; }
+  font-size: x-large;
+  font-weight: 700; }
+
+button {
+  font-weight: 700; }
 
 .box-drop {
   border: 1px solid black;
@@ -417,14 +423,15 @@ button {
               box-shadow: 4px 4px 0px 1px black; }
 
 .name-corner {
-  font-weight: 300;
+  font-weight: 600;
   font-size: x-large;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  white-space: nowrap; }
 
 .before {
   border: 1px solid black;
@@ -583,7 +590,8 @@ a:hover {
   padding: 4% 0 8% 0 !important; }
 
 .web-header {
-  background-color: lightgrey; }
+  background-color: lightgrey;
+  padding: 2%; }
 
 .brutalist-yellow {
   padding: 3%;
@@ -789,3 +797,6 @@ ol, ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+ol {
+  margin: 0 !important; }
