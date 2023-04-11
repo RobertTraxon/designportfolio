@@ -397,8 +397,8 @@ window.onload = function() {
         }
     });
 
-    localStorage.clear();
-    sessionStorage.clear();
+   // localStorage.clear();
+   // sessionStorage.clear();
 
 
     if(cat==="Tom"){
