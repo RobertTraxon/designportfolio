@@ -376,6 +376,8 @@ hr {
   .logo-top {
     padding: 5% !important; }
   #pjt, #pjs {
+    width:100%!important;
+
     text-align: center!important; }
   #pjt {
     margin-bottom: 1% !important; }
@@ -452,7 +454,8 @@ body {
     width: 60% !important;
     margin: 0; }
   #pjt, #pjs {
-    text-align: center; }
+    width:100%!important;
+    text-align: center!important; }
   .project-box {
     border-right: unset !important;
     border-bottom: 1px solid black; }

@@ -402,7 +402,7 @@ window.onload = function() {
 
 
     if(cat==="Tom"){
-        //rr();
+        rr();
     }
 
 
