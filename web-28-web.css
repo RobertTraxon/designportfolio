@@ -376,7 +376,7 @@ hr {
   .logo-top {
     padding: 5% !important; }
   #pjt, #pjs {
-    text-align: center; }
+    text-align: center!important; }
   #pjt {
     margin-bottom: 1% !important; }
   .bigger-wid {

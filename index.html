@@ -39,6 +39,16 @@
     <script src="web-6-bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 
+    <style type="text/css" media="screen">
+        /* Add style rules here */
+
+
+        .area-select{
+            font-size: x-large!important;
+        }
+
+    </style>
+
 
 
     <script src="web-7-interact.js"></script>
@@ -63,12 +73,14 @@
             <p class="mid-text"> This website contains client information, please use the password provided to view the full range of work. If you haven't been provided with a password and you would like to see what I do, feel free to email me at <b>traxoncreative@gmail.com </b></p>
 
 
-            <div class="password-box">
+            <div class="row password-box" style="display: flex">
 
                 <!--<label class="mid-text" for="pass">Password:</label>-->
-                <input type="password" id="pass" name="password" minlength="8" required>
-                <input class="pw-button" id="enterCode" type="submit" value="submit">
+                <input class="col-xs-12 col-sm-7 col-md-7" type="password" id="pass" name="password" minlength="8" required style="align-self: center">
+                <div class="col-xs-12 col-sm-5 col-md-5" style="padding: 2%">
+                    <input class="pw-button" id="enterCode" type="submit" value="submit" style="align-self: center; margin: 2% auto!important; width:100%">
 
+                </div>
 
             </div>
 
@@ -115,7 +127,7 @@
         </div>
 
         <div class="col-xs-8 col-sm-8 hidden-md hidden-lg hidden-xl menu-but-hol">
-            <div id="nav-icon4">
+            <div id="nav-icon4" style="align-self: center;height:40px">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -510,7 +522,7 @@
 
     <div class="animate__animated animate__slideInUp modal-item col-xs-10 col-sm-10 col-md-8 col-lg-6">
         <div class="content-show">
-            <div class="back-to-top">
+            <div class="back-to-top" style="bottom:8%">
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                 <svg class="circle-pad" height="auto" width="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 407.437 407.437" xml:space="preserve">
@@ -776,7 +788,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 double-cont">
 
                 <div class="border-bottom">
-                    <p style="font-size: xx-large ; font-weight: 200;">To find out a little bit more about what I do, feel free to check out my CV below.</p>
+                    <p style="font-size: x-large ; font-weight: 200;">To find out a little bit more about what I do, feel free to check out my CV below.</p>
                     <a href="Rob-Traxon-CV.pdf" download="Robert Traxon CV"><button class="center-but button-width download-button">Download CV</button></a>
                 </div>
 
@@ -796,7 +808,7 @@
 
 
         <div id="C4" class="contacts col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-            <p class=""><b>Contact</b></p>
+            <p class=""><b style="color:#645CBB">Contact</b></p>
 
 
             <div class="buttonSpace">
@@ -814,7 +826,7 @@
         </div>
 
         <div class="socials col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-            <p class=""><b>Connect</b></p>
+            <p class=""><b style="color:#645CBB">Connect</b></p>
             <a class="linkedInDocs buttonSpace">
                 <!--
                 <div><svg class="linkedIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></div>
