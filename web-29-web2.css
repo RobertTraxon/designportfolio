@@ -800,3 +800,257 @@ ol, ul {
 
 ol {
   margin: 0 !important; }
+
+
+
+
+
+
+
+.black-container-wide{
+    width:100%;
+    background-color: black;
+    height:-webkit-fit-content;
+    height:-moz-fit-content;
+    height:fit-content;
+    padding: 4%!important;
+
+}
+
+
+.black-container-wide>.inner-cont{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    padding: 0!important;
+    position: relative;
+
+}
+
+.white-tag{
+    color:black;
+    padding:1%!important;
+    background-color: white;
+    border-radius: 100px;
+    z-index: 101;
+    font-weight: 700;
+    font-size: large;
+    text-align: center;
+
+}
+
+
+
+
+.intro-text{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400!important;
+}
+
+.web-menu{
+//width: 90%;
+}
+
+.web-header{
+    background: unset;
+    background-color: #A6A5FF!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: unset!important;
+}
+
+
+
+
+
+
+
+.web-menu{
+    background-color: #A6A5FF!important;
+    border-bottom: none!important;
+
+}
+
+
+.top-nav{
+    margin-top: 1%!important;
+    -webkit-box-pack:end!important;
+    -ms-flex-pack:end!important;
+    justify-content:end!important;
+    color:black;
+}
+
+.image-box-inner{
+    width:92%;
+    height: 92%;
+    margin:4%;
+}
+
+
+.green-cont{
+
+    border: 2px solid black;
+    margin-bottom: 5%;
+}
+
+.image-box-inner:hover{
+    -webkit-transform: unset!important;
+    -ms-transform: unset!important;
+    transform: unset!important;
+}
+
+.cont-final-work{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    justify-content: start;
+}
+
+.white-line{
+    width:200%;
+    height:1px;
+    border-top:1px solid white;
+    position: absolute;
+    padding: 0!important;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    z-index: 100;
+
+}
+
+.white-line-vertical{
+    width:1px;
+    height:100%;
+    border-right:1px solid white;
+    position: absolute;
+    padding: 0!important;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    z-index: 100;
+}
+
+.top-nav{}
+
+
+
+#nav-menu{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.wrap {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin: 0 2rem;
+    line-height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 5.5rem;
+    margin-bottom: 0;
+}
+
+.eye {
+    border:2px solid black;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.eye:before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(20,20,20,1);
+}
+
+
+.down:before {
+    -webkit-animation: sadb 4s ease-in-out infinite;
+    animation: sadb 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes sadb {
+    0%, 10% {
+        top: 0;
+    }
+    20%, 40% {
+        top: 50%;
+    }
+    50%, 100% {
+        top: 0;
+    }
+}
+
+@keyframes sadb {
+    0%, 10% {
+        top: 0;
+    }
+    20%, 40% {
+        top: 50%;
+    }
+    50%, 100% {
+        top: 0;
+    }
+}
+
+
+
+.intro-text{
+//color:white;
+//font-family: 'Titan One', cursive!important;
+
+}
+
+
+.web-header{
+    background-color: white!important;
+}
+
+
+.web-menu{
+    background-color: white!important;
+
+}
+
+
+.bluey {
+    background-color: #4f5cd6!important;
+}

@@ -214,15 +214,20 @@ var config =[
     //Twinkl
 
     {
-        id:"",
-        title:"Whole",
-        type:"HTML Game",
+        id:"10",
+        title:"Quiz Dog",
+        type:"Educational Platform",
 
-        Desc:"",
+        client:"Quiz Dog",
+
+        roles:["Research","User-flow","Information Architecture", "Prototyping","Wire-framing","UI Design"],
+
+        Desc:"Quiz Dog is an educational platform that provides a library of pre-made games and activities for educators to use to assist learning. Teachers or parents can use the portal to customise resources, create lessons, assign homework, and track the progress of their pupils' work.",
         tags:["Product Design","UX/UI","Web Design"],
-        thumbnail:"images/whole/image-1.png",
+
+        thumbnail:"images/quiz-dog/image-1.png",
         content:[
-            {html:"whole.html"},
+            {html:"quizdog.html"},
         ]
     }
 
@@ -356,7 +361,7 @@ window.onload = function() {
 
 
     $("body").css("overflow","hidden")
-   // rr();
+    //rr();
     var constPPProtect = atob('dXNlclZpZXdBbGw=')
 
     var allAdded = false;
@@ -402,7 +407,7 @@ window.onload = function() {
 
 
     if(cat==="Tom"){
-        rr();
+       rr();
     }
 
 
@@ -415,6 +420,7 @@ window.onload = function() {
 
         localStorage.setItem('myCat', 'Tom');
 
+        $("#introTitle").addClass("animate__fadeInUp")
 
     }
 
@@ -677,42 +683,38 @@ window.onload = function() {
 
 
 
-    var myTarget = document.querySelector('.big-text')
+    var myTarget = document.querySelector('#topNav')
     var myTarget2 = document.querySelector('#nav-menu')
     var myTarget3 = document.querySelector('.web-menu')
 
 
 
-    /*
+
     window.addEventListener('scroll', function() {
 
+
+        console.log(myTarget.offsetTop)
 
 
         if((myTarget.offsetTop - window.scrollY <= 0)){
 
-            $("#nav-icon4").show();
-            myTarget.style.display = "unset!important"
+            $(".wrap").addClass("animate__bounceOutUp");
 
-            console.log("Fart")
-//todo soret
-            //myTarget.style.position = "fixed"
-           myTarget3.style.position = "fixed"
-            //$(".web-menu").css({'top':'-20%',"position":"fixed"}).animate({'top':'0'},500,"easeOutBack");
+            //$(".wrap").hide();
 
+            //alert("Fart")
 
-            $(".circle-cont").hide();
         }else{
+            $(".wrap").removeClass("animate__bounceOutUp");
 
-            //myTarget.style.position = "absolute"
-            //myTarget2.style.position = "absolute"
-            myTarget3.style.position = "relative"
+            // $(".wrap").addClass("animate__bounceOutUp");
 
-            $(".circle-cont").show();
+            //alert("SCROLL")
 
         }
     })
 
-*/
+
 
     var contShow = document.querySelector('.content-show')
 

@@ -371,6 +371,13 @@ hr {
   margin-left: 5vw; }
 
 @media (max-width: 575px) {
+
+
+  .white-tag{
+    margin-bottom: 1%!important;}
+  .white-tag:last-child{
+    margin-bottom: 0%!important;}
+
   .what-do {
     padding: 0 5% !important; }
   .logo-top {
@@ -435,6 +442,7 @@ hr {
     padding-bottom: calc(100%/1); } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
   .socials {
     margin-top: 5% !important; } }
 
@@ -442,6 +450,10 @@ body {
   overflow-x: hidden !important; }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .white-tag{
+    margin-bottom: 1%!important;}
+  .white-tag:last-child{
+    margin-bottom: 0%!important;}
   .what-do {
     padding: 0 5% !important; }
   .socials {
@@ -490,6 +502,10 @@ body {
     padding-bottom: calc(100%/1); } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .white-tag{
+    margin-bottom: 1%!important;}
+  .white-tag:last-child{
+    margin-bottom: 0%!important;}
   .what-do {
     padding: 0 5% !important; }
   .intro-text {
